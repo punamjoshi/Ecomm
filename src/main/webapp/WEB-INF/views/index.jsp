@@ -3,9 +3,11 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+  <link rel="stylesheet" href="<c:url value='resources/css/bootstrap.min.css'/>">
+  <script src="<c:url value='resources/js/jquery.min.js'/>"></script>
+  <script src="<c:url value='resources/js/bootstrap.min.js'/>"></script>
+  
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -20,7 +22,7 @@
 
 <br/>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <%@ include file="NavBar.html" %>
+    <%@ include file="NavBar.jsp" %>
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,22 +34,22 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/index1.jpg" alt="Chania" width="460" height="345">
+        <img src="resources/images/index1.jpg" alt="Chania" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="images/images6.jpg" alt="Chania" width="460" height="345">
+        <img src="resources/images/images6.jpg" alt="Chania" width="460" height="345">
       </div>
     
       <div class="item">
-        <img src="images/images4.jpg" alt="Flower" width="460" height="345">
+        <img src="resources/images/images4.jpg" alt="Flower" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="images/Music-Hub-in-Abu-Dhabi.jpg" alt="Flower" width="460" height="345">
+        <img src="resources/images/Music-Hub-in-Abu-Dhabi.jpg" alt="Flower" width="460" height="345">
       </div>
       <div class="item">
-        <img src="images/images5.jpg" alt="Flower" width="460" height="345">
+        <img src="resources/images/images5.jpg" alt="Flower" width="460" height="345">
       </div>
     </div>
 
@@ -71,9 +73,9 @@
 <div class="row col-sm-12">
 
 
- <div class="col-md-3 col-sm-4 col-xs-6"><img src="images/images1.jpg" class="img-circle"height="200" width="270" ></div>
- <div class="col-md-3 col-sm-4 col-xs-6"><img src="images/images4.jpg" class="img-circle" height="200" width="270" ></div>
- <div class="col-md-3 col-sm-4 col-xs-6"><img src="images/images5.jpg" class="img-circle"height="200" width="270"  ></div>
+ <div class="col-md-3 col-sm-4 col-xs-6"><a href="<c:url value='/Info'/>"><img src="resources/images/images1.jpg" class="img-circle"height="200" width="270" ></a></div>
+ <div class="col-md-3 col-sm-4 col-xs-6"><a href="<c:url value='/Trial'/>"><img src="resources/images/images4.jpg" class="img-circle" height="200" width="270" ></a></div>
+ <div class="col-md-3 col-sm-4 col-xs-6"><img src="resources/images/images5.jpg" class="img-circle"height="200" width="270"  ></div>
  
 
 </div>

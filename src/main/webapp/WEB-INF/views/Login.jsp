@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
- <link rel="stylesheet" href="css/style.css" type="text/css">
+ <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+  <link rel="stylesheet" href="<c:url value='resources/css/style.css'/>">
 <title>Insert title here</title>
 <style>
 
@@ -13,7 +14,7 @@
 <body>
 <div>
 
-<table >
+<table height="200" width="200">
 <th colspan="1">Login Here</th>
 <tr><td>Username:</td>
 <td><input type="text" id="uname"></td>
