@@ -4,6 +4,7 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+  
   <link rel="stylesheet" href="<c:url value='resources/css/bootstrap.min.css'/>">
   <script src="<c:url value='resources/js/jquery.min.js'/>"></script>
   <script src="<c:url value='resources/js/bootstrap.min.js'/>"></script>
@@ -21,8 +22,10 @@
 <div class="container">
 
 <br/>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <%@ include file="NavBar.jsp" %>
+<%@ include file="NavBar.jsp" %>
+<center>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" style="height:250px;width:700px">
+    
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -64,21 +67,21 @@
     </a>
   </div>
   
-  <br/>
- <!--    <div class="row">
-  <div class="col-sm-4"><img src="iimages/index1.jpg" ></div>
-  <div class="col-sm-8"><img src="images/images.jpg" ></div>
-</div>-->
+  <br/><br/><br/><br><br/> <br/><br/><br/>
 
+</div>
+</center>
+<center>
 <div class="row col-sm-12">
 
 
- <div class="col-md-3 col-sm-4 col-xs-6"><a href="<c:url value='/Info'/>"><img src="resources/images/images1.jpg" class="img-circle"height="200" width="270" ></a></div>
- <div class="col-md-3 col-sm-4 col-xs-6"><a href="<c:url value='/Trial'/>"><img src="resources/images/images4.jpg" class="img-circle" height="200" width="270" ></a></div>
+ <div class="col-md-3 col-sm-4 col-xs-6"><a href="<c:url value='/Info?name=Mobile'/>"><img src="resources/images/images1.jpg" class="img-circle"height="200" width="270" ></a></div>
+ <div class="col-md-3 col-sm-4 col-xs-6"><a href="<c:url value='/Info?name=Jwellery'/>"><img src="resources/images/images4.jpg" class="img-circle" height="200" width="270" ></a></div>
  <div class="col-md-3 col-sm-4 col-xs-6"><img src="resources/images/images5.jpg" class="img-circle"height="200" width="270"  ></div>
  
 
-</div>
 
+</div>
+</center>
 </body>
 </html>

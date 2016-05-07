@@ -22,14 +22,6 @@
       <li><a href="<c:url value='/Registration'/>">New User?</a></li>
       <li><a href="<c:url value='/Aboutus'/>">About us</a></li>
       <li><a href="<c:url value='/ViewAll'/>">View All</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-         <ul class="dropdown-menu">
-          <li><a href="<c:url value='/ViewAll'/>">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-         
-       </li>
        
     </ul>
     

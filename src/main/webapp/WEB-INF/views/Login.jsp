@@ -14,7 +14,7 @@
 <body>
 <div>
 
-<table height="200" width="200">
+<!-- <table height="200" width="200">
 <th colspan="1">Login Here</th>
 <tr><td>Username:</td>
 <td><input type="text" id="uname"></td>
@@ -23,7 +23,18 @@
 <td><input type="password" id="uname"></td>
 </tr> 
 <tr><td><input type="submit" value="submit"></td></tr>
-</table>
+</table> -->
+
+
+<div class="login-page">
+  <div class="form">
+ <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      
+    </form>
+  </div>
 </div>
 </body>
 </html>

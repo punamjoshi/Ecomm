@@ -10,28 +10,32 @@
 <title>Insert title here</title>
 </head>
 <body>
-<div>
 
-<table border="1">
-<th colspan="1">Register Here</th>
-<tr><td>Username:</td>
-<td><input type="text" id="uname"></td>
-</tr> 
-<tr><td>Password:</td>
-<td><input type="password" id="uname"></td>
-</tr> 
-<tr><td>Email:</td>
-<td><input type="text" id="email"></td>
-</tr>
 
-<tr><td>Address:</td>
-<td><input type="text" id="add"></td>
-</tr>
-<tr><td>Contact No:</td>
-<td><input type="text" id="cno"></td>
-</tr>
-<tr><td><input type="submit" value="submit"></td></tr>
-</table>
+<div class="login-page" style="width:400;">
+  <div class="form">
+ <form class="login-form">
+
+Register Here
+<br/>
+Username:
+<input type="text" id="uname">
+Password:
+<input type="password" id="uname">
+Email:
+<input type="text" id="email">
+Address:
+<input type="text" id="add">
+
+Contact No:
+<input type="text" id="cno">
+<input type="submit" value="submit">
+</form>
 </div>
+
+</div>
+
+
+
 </body>
 </html>
